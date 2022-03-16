@@ -20,6 +20,16 @@
 }
 
 @font-face {
+    font-family: future-s;
+    src: url(../assets/fonts/future-socialism.ttf);
+}
+
+@font-face {
+    font-family: arial-round;
+    src: url(../assets/fonts/Arial-Rounded-Bold.ttf);
+}
+
+@font-face {
     font-family: bitcrusher;
     src: url(../assets/fonts/bitcrusher.ttf);
 }
@@ -42,11 +52,17 @@ p {
 }
 
 body {
-    font-family: "Lilita One", cursive;
+    /* font-family: "future-s", cursive; */ /* Lilita One */
     /* font-size: 18px; */
     background-color: #cccccc;
     height: 100vh;
     /* #1b2130 */
+}
+
+.logo{
+    font-family: "future-s";
+    padding-top: 1.2rem;
+    font-size: 34px;
 }
 
 .contenedor {
@@ -66,7 +82,7 @@ body {
 }
 
 .cartas-contenedor {
-    width: 16.7%;
+    width: 17%;
     max-width: 100%;
     /* 400px */
     margin: auto;
@@ -169,13 +185,12 @@ body {
     padding: 0.7em;
     line-height: 0;
     z-index: 9999;
+    font-family: arial-round; /* Lilita One */
     font-size: 10px;
-    color: #888; /* #C4C4C4 */
-    /* color: whitesmoke; */
+    color: #666; /* #C4C4C4 */
     border-radius: 8px 0 8px 0;
     /* border-radius: 20px; */
     border: 0px solid #1F1F1F;
-    /* box-shadow: 1px 1px 40px #1F1F1F;  */
     background-color: #FFFFFF;
     /* #bb13b9 */
 }
