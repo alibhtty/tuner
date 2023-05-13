@@ -1,9 +1,9 @@
 {
-    "name":"Cyborg",
-    "short_name":"Cyborg",
-    "description":"Welcomte to Tunner by alibhtty",
+    "name":"Tuner",
+    "short_name":"Tuner",
+    "description":"Welcomte to Tuner by alibhtty",
     "background_color":"#000000",
-    "theme_color":"#FF6600",
+    "theme_color":"#000000",
     "orientation":"portrait",
     "display":"standalone",
     "start_url":"https://alibhtty.github.io/tuner/",

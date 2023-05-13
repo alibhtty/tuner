@@ -1,6 +1,6 @@
 :root {
     /* --bg-cuadro: rgb(46, 66, 62); */ /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
-    --bg-cuadro: #ccc; /* #101316    #262d33 */
+    --bg-cuadro: #999999; /* #cccccc */
     /* --bg-cuadro: url(../assets/img/banner/green.jpg);  */
     --bg-marco: rgb(47, 236, 199);
     --titulo: whitesmoke;
@@ -52,9 +52,11 @@ p {
 }
 
 body {
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
     /* font-family: "future-s", cursive; */ /* Lilita One */
     /* font-size: 18px; */
-    background-color: #cccccc;
+    background-color: #999999; /* cccccc */
     height: 100vh;
     /* #1b2130 */
 }
@@ -67,14 +69,14 @@ body {
 
 .contenedor {
     width: 100%;
-    height: 28vh;
+    /* height: 28vh; */
     margin: auto;
     padding: 0 0;
 }
 .contenedor-mid {
     /* position: absolute; */
     width: 100%;
-    height: 37vh;
+    /* height: 37vh; */
     margin: auto;
     padding: 0 0;
 }
@@ -135,7 +137,7 @@ body {
     position: relative;
     height: 25vh;  /* 210px */
     width: 55vw;  /* 210px */
-    margin: 1rem 1rem;  /* 10px 7px 15px 15px */
+    margin: .5rem 1rem;  /* 10px 7px 15px 15px */
     transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
     margin: 'em auto';
     cursor: pointer;
@@ -145,7 +147,7 @@ body {
     position: relative;
     height: 34vh;  /* 270px */
     width: 55vw; /* 210px */
-    margin: 1rem 1rem;  /* 10px 7px 15px 15px */
+    margin: .5rem 1rem;  /* 10px 7px 15px 15px */
     transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
     margin: 'em auto';
     cursor: pointer;
@@ -155,7 +157,7 @@ body {
     position: relative;
     height: 75px;
     width: 55vw;  /* 210px */
-    margin: 1rem 1rem;  /* 10px 7px 15px 15px */
+    margin: .5rem 1rem;  /* 10px 7px 15px 15px */
     transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
     margin: 'em auto';
     cursor: pointer;
@@ -170,7 +172,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    border: 3px solid #FFFFFF; /* 1f1f1f */
+    /* border: 3px solid rgba(255, 255, 255, 0.5); */
 }
 
 .carta .carta__cara_delantera {
@@ -194,7 +196,7 @@ body {
     font-family: arial-round; /* Lilita One */
     font-size: 10px;
     color: #666; /* #C4C4C4 */
-    border-radius: 8px 0 8px 0;
+    border-radius: 8px;  /* 8px 0 8px 0 */
     /* border-radius: 20px; */
     border: 0px solid #1F1F1F;
     background-color: #FFFFFF;
@@ -233,10 +235,10 @@ body {
     background: #202126;
     z-index: 2;
     opacity: 0;
-    background-color: #ff0066;
+    background-color: #ffffff;  /* ff0066 */
     /* background: radial-gradient(circle, #202126 0%, #2b4781 47%, rgba(21, 26, 31, 0.959) 100%); */
     transition: opacity 0.5s ease-out;
-}
+}  /* after */
 
 .carta .carta__cara_delantera .carta__contenido-delantero:hover::after {
     opacity: 1;
@@ -838,4 +840,5 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
 
 .header{
     margin-top: 44px;
+    margin-bottom: 1.5rem;
 }
